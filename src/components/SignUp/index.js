@@ -4,12 +4,18 @@ import { compose } from 'recompose';
 
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+import { title } from '../Home';
 
 const SignUpPage = () => (
-  <div>
-    <h1>SignUp</h1>
+  <header className="App-home">
+    <h1 className="title">
+      <strong>{title}</strong>
+    </h1>
+  <div class="App-home">
+    <h1>Sign Up for UPick today </h1>
     <SignUpForm />
   </div>
+  </header>
 );
 
 const INITIAL_STATE = {
@@ -68,7 +74,9 @@ class SignUpFormBase extends Component {
     email === '' ||
     username === '';
     return (
+      <div>
       <form onSubmit={this.onSubmit}>
+      <div>
       <input
       name="username"
       value={username}
@@ -76,6 +84,8 @@ class SignUpFormBase extends Component {
       type="text"
       placeholder="Full Name"
       />
+      </div>
+      <div>
       <input
       name="email"
       value={email}
@@ -83,6 +93,8 @@ class SignUpFormBase extends Component {
       type="text"
       placeholder="Email Address"
       />
+      </div>
+      <div>
       <input
       name="passwordOne"
       value={passwordOne}
@@ -90,6 +102,8 @@ class SignUpFormBase extends Component {
       type="password"
       placeholder="Password"
       />
+      </div>
+      <div>
       <input
       name="passwordTwo"
       value={passwordTwo}
@@ -97,10 +111,13 @@ class SignUpFormBase extends Component {
       type="password"
       placeholder="Confirm Password"
       />
+      </div>
+      <div>
       <button disabled={isInvalid} type="submit"> Sign Up </button>
-
+      </div>
       {error && <p>{error.message}</p>}
       </form>
+      </div>
     );
   }
 }

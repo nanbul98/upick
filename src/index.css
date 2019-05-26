@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.App {
+  text-align: justify;
+}
+
+
+.App-home {
+  background-color: #F2C94C;
+  min-height: 100vh;
+  font-family: 'montserrat';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-other {
+  background-color: #F2C94C;
+  min-height: 100vh;
+  font-family: 'montserrat';
+  display: flex;
+  flex-direction: row;
+
+}
+
+.list-btn {
+  background-color: #F2994A;
+  height: 50px;
+  width: 500px;
+  padding: 5px 100px;
+}
+
+.new-list-btn {
+  background-color: #EB5757;
+   padding: 5px 100px;
+}
+
+.title {
+  font-size: 120px;
+  font-weight: bolder;
+}
+
+
+.title-side {
+  position: absolute;
+  width: 446px;
+  height: 156px;
+  left: 80px;
+  top: 67px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 144px;
+
+  color: #000000;
+}

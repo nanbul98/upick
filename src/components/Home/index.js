@@ -1,8 +1,9 @@
 import React from 'react';
 
+export const title = "UPick";
 const Home = () => (
-  <div>
-    <h1>Home</h1>
+  <div class="App-home">
+    <h1 class="title">{title}</h1>
   </div>
 );
 
